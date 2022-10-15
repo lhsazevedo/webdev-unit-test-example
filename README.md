@@ -52,6 +52,10 @@ Password Validator
    │
    ╵ /app/PasswordValidatorTest.php:34
 
+(...)
+
+FAILURES!
+Tests: 7, Assertions: 7, Failures: 1.
 ```
 
 Can you fix this bug?
