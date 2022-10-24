@@ -14,11 +14,11 @@ class PasswordValidatorTest extends TestCase {
     }
 
     public function test_it_requires_uppercase_letters() {
-        $this->assertFalse(PasswordValidator::validate('3fhfsa5bmwca'));
+        $this->assertFalse(PasswordValidator::validate('3fhfs@5bmwc*'));
     }
 
     public function test_it_requires_lowercase_letters() {
-        $this->assertFalse(PasswordValidator::validate('3FHFSA5BMWCA'));
+        $this->assertFalse(PasswordValidator::validate('3FHFS@5BMWC*'));
     }
 
     public function test_it_requires_numbers() {
