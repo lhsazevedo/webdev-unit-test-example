@@ -8,9 +8,9 @@ class PasswordValidator {
 
         $hasMinimumLength = strlen($string) >= 12;
         $hasNumbers = preg_match('/[0-9]+/', $string) === 1;
-        $hasUppercaseLetters = preg_match('/[A-Z]+/', $string);
-        $hasLowercaseLetters = preg_match('/[a-z]+/', $string);
-        $hasSpecialCharacters = preg_match('/[!@#$%^&*]+/', $string);
+        $hasUppercaseLetters = preg_match('/[A-Z]+/', $string) === 1;
+        $hasLowercaseLetters = preg_match('/[a-z]+/', $string) === 1;
+        $hasSpecialCharacters = preg_match('/[!@#$%^&*]+/', $string) === 1;
         
         return $hasMinimumLength
             && $hasNumbers
